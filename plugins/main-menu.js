@@ -48,15 +48,11 @@ let menu = `> *・°☆・°・°☆・°・*☆・°・*
  ❢ Comandos para ver estado e información de la Bot.
  𖹭𖹭 *${usedPrefix}formarpareja5*
  𖹭𖹭 *${usedPrefix}estado*
- 𖹭𖹭 *${usedPrefix}host*
- 𖹭𖹭 *${usedPrefix}hosting*
- 𖹭𖹭 *${usedPrefix}botreglas*
  𖹭𖹭 *${usedPrefix}hornymenu*
  𖹭𖹭 *${usedPrefix}menu*
  𖹭𖹭 *${usedPrefix}menu2*
  𖹭𖹭 *${usedPrefix}runtime*
  𖹭𖹭 *${usedPrefix}script*
- 𖹭𖹭 *${usedPrefix}staff*
  𖹭𖹭 *${usedPrefix}menulista*
  𖹭𖹭 *${usedPrefix}blocklist*
 
