@@ -6,7 +6,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   let user = global.db.data.users[m.sender];
 
   if (user.chocolates < 2) {
-    return conn.reply(m.chat, `ꕥ No tienes suficientes *Chocolates 🍫* Necesitas 2 más para usar este comando.`, m);
+    return conn.reply(m.chat, `ꕥ No tienes suficientes *Chocolates* Necesitas 2 más para usar este comando.`, m);
   }
 
   try {
@@ -33,17 +33,13 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const vistas = formatViews(views);
     const canal = author.name ? author.name : 'Desconocido';
         const infoMessage = `
-*𖹭.╭╭ִ╼࣪━ִﮩ٨ـﮩ♡̫𝗆𝖾𝗀֟፝𝗎꯭𝗆𝗂꯭𝗇𖦹ׅ♡ִ̫ﮩ٨ـﮩ━ִ╾࣪╮╮.𖹭*
-> ♡ *Título:* ${title || 'Desconocido'}
-*°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°*
-> ♡ *Duración:* ${timestamp || 'Desconocido'}
-*°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°*
-> ♡ *Vistas:* ${vistas || 'Desconocido'}
-*°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°*
-> ♡ *Canal:* ${canal}
-*°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°*
-> ♡ *Publicado:* ${ago || 'Desconocido'}
-*⏝ּׅ︣︢ۛ۫۫۫۫۫۫ۜ⏝ּׅ︣︢ۛ۫۫۫۫۫۫ۜ⏝ּׅ︣︢ۛ۫۫۫۫۫۫ۜ⏝ּׅ︣︢ۛ۫۫۫۫۫۫ۜ⏝ּׅ︢︣ۛ۫۫۫۫۫۫ۜ⏝ּׅ︢︣ۛ۫۫۫۫۫۫ۜ⏝ּׅ︢︣ۛ۫۫۫۫۫۫ۜ⏝ּׅ︢︣ۛ۫۫۫۫۫۫ۜ⏝ּׅ︢︣ׄۛ۫۫۫۫۫۫ۜ*`;
+*╭─ YT PLAY 𝗜𝗻𝗳𝗼 ─╮*
+┊> ☔ *Título:* ${title || 'Desconocido'}
+┊> 🍁 *Duración:* ${timestamp || 'Desconocido'}
+┊> 🌴 *Vistas:* ${vistas || 'Desconocido'}
+┊> ☔ *Canal:* ${canal}
+┊> 🍁 *Publicado:* ${ago || 'Desconocido'}
+*╰───────────────🍁🌴☔╯*`;
 
     const thumb = (await conn.getFile(thumbnail))?.data;
 
@@ -96,7 +92,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 
     user.chocolates -= 2;
-    conn.reply(m.chat, `ꕥ Has utilizado 2 *Chocolates 🍫*`, m);
+    conn.reply(m.chat, `ꕥ Has utilizado 2 *Chocolates*`, m);
 
   } catch (error) {
     return m.reply(`⚠︎ Ocurrió un error: ${error}`);
