@@ -58,7 +58,7 @@ let handler = async function (m, { conn, text }) {
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:
 • 15 Chocolates 🍫
-• 5 MIchiCoins 🪙
+• 5 MeguCoins 🪙
 • 245 Experiencia 💸
 • 12 Tokens 💰`
 
@@ -71,7 +71,8 @@ let handler = async function (m, { conn, text }) {
         body: '💥 ᴱˡ ᵇᵒᵗ ᵐᵃˢ ᵉˣᵖˡᵒˢᶦᵛᵒꜝꜝꜝ',
         previewType: "PHOTO",
         mediaType: 1,
-        renderLargerThumbnail: true
+        renderLargerThumbnail: true,
+        thumbnailUrl: perfil // <- esta línea es clave
       }
     }
   })
