@@ -31,7 +31,7 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 const vid = ['https://files.catbox.moe/nnwm47.mp4']
 
 let menu = `> *・°☆・°・°☆・°・*☆・°・*
-> Hola *${taguser}*!, soy *Megumin-Bot*
+> Hola *${taguser}*!, soy *Michi-Ai-Bot* ☔
 > *・°☆・°・°☆・°・*☆・°・*
 > Bot: *${(conn.user.jid == global.conn.user.jid ? 'Oficial' : 'SubBot')}*
 > Creador: *Wirk*
